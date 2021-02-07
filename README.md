@@ -48,6 +48,7 @@ Transformer model with the following parameters, all in the [config.py](config.p
 | Switch Transformers (16)  | 65,327,981  | 5596 MB |[00:10<00:00,  3.80it/s]
 
 <img src=img/loss.jpg>
+<img src=img/memory.jpg>
 
 
 # References
