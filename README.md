@@ -2,13 +2,13 @@
 
 This repository implements Seq2Seq model using [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/pdf/2101.03961.pdf) service.
 
-The aim of this implementation is to confirm that this approach can be usefull even in smaller models size, producing better results with a little overhead on the computing time and with the same memory consuptiom, but with a model 3x times bigger than standard transformers.
+The aim of this implementation is to confirm that this approach can be usefull even in smaller models size, producing better results with a little overhead on the computing time and with little increase in memory usage, but with a model 3x times bigger than standard transformers.
 
 
 # Project Details
 For learning purpose I decided to not use any package with transformers implemented, so in this repository you find all the code to implement all steps of the standard transformer and the Switch Transformers:
 
-The application is a Seq2Seq model to translate from EN to DE. This task is "easy" to a Transformer model, but the goal is to show how the Switch Transformers overfit faster the dataset.
+The application is a Seq2Seq model to translate from EN to DE. This dataset is "easy" to a Transformer model, but the goal is to show how the Switch Transformers overfit faster the dataset.
 
 The codes are inspired in [Bentrevett repository](https://github.com/bentrevett/pytorch-seq2seq) about Seq2Seq and [LabML](https://nn.labml.ai/transformers/switch/) about Switch Transformers. Those are amazing reference materials to this subject.
 
@@ -48,6 +48,7 @@ Transformer model with the following parameters, all in the [config.py](config.p
 | Switch Transformers (16)  | 65,327,981  | 5596 MB |[00:10<00:00,  3.80it/s]
 
 <img src=img/loss.jpg>
+<br>
 <img src=img/memory.jpg>
 
 
