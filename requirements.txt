@@ -1,0 +1,7 @@
+torch
+torchtext
+numpy
+spacy
+tqdm
+matplotlib
+pickle
